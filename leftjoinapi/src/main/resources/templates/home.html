@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+</html>
+
+<head>
+	<title>Employee Portal</title>
+</head>
+
+<body>
+	<header>
+		<h1>Welcome To Employee Portal</h1>
+		<nav>
+			<ul>
+				<li><a th:href="@{EmployeeRegistrationform}">Employee Registration form</a></li>
+				<li><a th:href="@{create department}">Create Department</a></li>
+				<li><a th:href="@{department list}">Departments List</a></li>
+				<li><a th:href="@{employee list}">Employee List</a></li>
+				<li><a th:href="@{all}">All</a></li>
+			</ul>
+		</nav>
+	</header>
+	<footer>
+		<p>&copy; 2023 Employee Portal. All rights reserved.</p>
+	</footer>
+</body>
+
+</html>

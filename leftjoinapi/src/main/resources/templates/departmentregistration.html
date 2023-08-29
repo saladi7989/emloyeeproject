@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Create Registration Form</title>
+
+	<link href="//fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<div class="container my-2" align="center">
+
+		<h3>Department Registration Form</h3>
+		<form th:action="@{/saveDepartment}" th:object="${departments}" method="POST">
+		<input type="number" th:field="${departments.did}" placeholder="Enter did" class="form-control col-4 mb-4" /><br>
+		<input type="text" th:field="${departments.dname}" placeholder="Enter dname"
+			class="form-control col-4 mb-4" /><br>
+		<button class="btn btn-primary" type="submit">save</button>
+		</form>>
+	</div>
+</body>
+
+</html>
